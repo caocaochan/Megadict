@@ -1,0 +1,24 @@
+{
+  "dictionaries": [
+    { "id": "xhdcd", "repo": "xhdcd-yomitan", "asset": "xhdcd-yomitan-text.zip", "local": ["../XDHDCDYomitan/outputs/xhdcd-yomitan-text.zip"] },
+    { "id": "hydcd", "repo": "hydcd-yomitan", "asset": "hydcd-qiding-yomitan.zip", "local": ["../hydcd-yomitan/outputs/hydcd-qiding-yomitan.zip", "../hydcd-yomitan/outputs/caption-fix/hydcd-qiding-yomitan.zip"] },
+    { "id": "xinhua", "repo": "chengyu-yomitan", "asset": "xhcycd-yomitan.zip", "local": ["../Chengyu/outputs/release/xhcycd-yomitan.zip", "../Chengyu/outputs/published/xhcycd-yomitan.zip"] },
+    { "id": "chengyu", "repo": "chengyu-yomitan", "asset": "hycyyl-yomitan.zip", "local": ["../Chengyu/outputs/release/hycyyl-yomitan.zip", "../Chengyu/outputs/published/hycyyl-yomitan.zip"] },
+    { "id": "collocations", "repo": "mandarin-collocations", "asset": "mandarin-collocations.zip", "local": ["../Collocations/dist/mandarin-collocations.zip"] },
+    { "id": "slang", "repo": "bilibili-slang-dictionary", "asset": "bilibili_slang.zip", "local": ["../BilibiliFreq/github_release_publish/bilibili_slang.zip"] },
+    { "id": "naer", "repo": "naer-yomitan", "asset": "naer_terms.zip", "local": ["../NaerYomitan/dist/naer_terms.zip"] },
+    { "id": "cbdb", "repo": "cbdb-yomitan", "asset": "CBDB-Yomitan.zip" },
+    { "id": "novel", "repo": "NovelNames", "asset": "NovelNames.zip", "local": ["../NovelFreq/NovelNames/dist/{tag}/NovelNames.zip"] },
+    { "id": "genshin-zh", "repo": "genshin-yomitan", "asset": "genshin_zh.zip", "local": ["../GenshinYomitan/dist/genshin_zh.zip"] },
+    { "id": "genshin-en", "repo": "genshin-yomitan", "asset": "genshin_en.zip", "local": ["../GenshinYomitan/dist/genshin_en.zip"] },
+    { "id": "moegirl", "repo": "moegirl-yomitan", "asset": "moegirl-yomitan.zip", "local": ["../MoeGirl/dist/moegirl-yomitan.zip"] },
+    { "id": "wikipedia", "repo": "chinese-wikipedia-dictionary", "asset": "wikipedia_zh.zip", "local": ["../WikipediaYomitan/dist/wikipedia_zh.zip"] }
+  ],
+  "frequencies": [
+    { "id": "bilibili-frequency", "repo": "yomitan-frequency-dicts", "asset": "Bilibili.zip", "local": ["../BilibiliFreq/bilibili_freq.zip"] },
+    { "id": "bilibili-small", "repo": "yomitan-frequency-dicts", "asset": "BilibiliSmall.zip" },
+    { "id": "danmei", "repo": "yomitan-frequency-dicts", "asset": "Danmei.zip", "local": ["../Danmei5k/Danmei.zip"] },
+    { "id": "danmei-opt", "repo": "yomitan-frequency-dicts", "asset": "DanmeiOpt.zip", "local": ["../NovelFreq/out/DanmeiOpt.zip"] },
+    { "id": "webnovel", "repo": "yomitan-frequency-dicts", "asset": "Webnovel.zip", "local": ["../NovelFreq/out_webnovel/Webnovel.zip"] }
+  ]
+}
