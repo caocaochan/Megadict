@@ -17,8 +17,6 @@ on:
       - 'sources.json'
       - 'build.ps1'
       - 'fetch.ps1'
-      - 'verify.mjs'
-      - '.github/workflows/release.yml'
 
 permissions:
   contents: write

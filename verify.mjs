@@ -1,5 +1,6 @@
 // Assumes Node 24 and the lib files from the pinned Yomitan release.
 import assert from 'node:assert/strict';
+import {openAsBlob} from 'node:fs';
 import {readFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
@@ -9,9 +10,9 @@ assert(yomitanDirectory && distDirectory, 'Usage: node verify.mjs <Yomitan-direc
 
 const loadYomitan = (file) => import(pathToFileURL(resolve(yomitanDirectory, 'lib', file)));
 const {dictionaryIndex, dictionaryTermBankV3} = await loadYomitan('validate-schemas.js');
-const {TextWriter, Uint8ArrayReader, ZipReader} = await loadYomitan('zip.js');
+const {BlobReader, TextWriter, ZipReader} = await loadYomitan('zip.js');
 const readDist = (file, options) => readFile(resolve(distDirectory, file), options);
-const archive = new ZipReader(new Uint8ArrayReader(await readDist('Megadict.zip')));
+const archive = new ZipReader(new BlobReader(await openAsBlob(resolve(distDirectory, 'Megadict.zip'))));
 
 try {
     const list = await archive.getEntries();
